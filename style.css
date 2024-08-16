@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    max-width: 450px;
+    height: 80vh;
+    margin: 50px auto;
+    background-color: #111111;
+    border-radius: 10px;
+}
+.contenedor__encabezado{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor__titulo{
+    font-size: 25px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+.contenedor__boxicons{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+}
+ /* Barra de chat, estado, llamadas */
+.contenedor__encabezado_barra{
+    height: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor__camara{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+.contenedor__titulo_navegacion{
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+/* --------------chats-------------- */
+.contenedor__chats{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.contenedor__imagen{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.contenedor__informacion{
+    flex-grow: 1;
+}
+.contenedor__nombre{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contenedor__mensaje{
+    color: #9b9fa2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor_tiempo{
+    font-size: 15px;
+    color: #7a858c;
+    font-family: Arial, Helvetica, sans-serif;
+}
