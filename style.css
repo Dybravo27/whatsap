@@ -1,3 +1,4 @@
+@import url(variables.css);
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
     max-width: 450px;
     height: 90vh;
     margin: 50px auto;
-    background-color: #111111;
+    background-color: var(--negro_grisaceo);
     border-radius: 10px;
     position: relative;
 }
@@ -19,13 +20,13 @@
 }
 .contenedor__titulo{
     font-size: 25px;
-    color: #fff;
+    color: var(--blanco);
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 20px;
 }
 
 .contenedor__boxicons{
-    color: #fff;
+    color: var(--blanco);
     text-decoration: none;
     margin-right: 20px;
     font-size: 25px;
@@ -33,33 +34,27 @@
  /* Barra de chat, estado, llamadas */
 .contenedor__encabezado_barra{
     height: 40px;
-    color: #fff;
+    color: var(--blanco);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .contenedor__camara{
-    color: #fff;
+    color: var(--blanco);
     font-size: 25px;
     text-decoration: none;
 }
 .contenedor__titulo_navegacion{
-    color: #fff;
+    color: var(--blanco);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5px;
     text-decoration: none;
 }
-/* --------------chats-------------- */
-.contenedor__listas{
-    max-height: 555px;
-    overflow-y: scroll;
-    padding: 10px;
-}
 .contenedor__contactos{
     display: flex;
     position: absolute;
-    background-color: #25d366;
+    background-color: var(--verde_esmeralda);
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -68,8 +63,14 @@
     justify-content: center;
     padding: 25px;
     cursor: pointer;
-    right: 45px;
+    right: 40px;
     bottom: 25px;
+}
+/* --------------chats-------------- */
+.contenedor__listas{
+    max-height: 555px;
+    overflow-y: scroll;
+    padding: 10px;
 }
 .contenedor__chats{
     display: flex;
@@ -77,8 +78,8 @@
     padding: 10px;
     margin-bottom: 5px;
 }
-.contenedor__chats:hover{
-    background-color: #292929;
+.contenedor__chats--fondo_gris_oscuro:hover{
+    background-color: var(--gris_oscuro);
 }
 .contenedor__imagen{
     width: 50px;
@@ -87,37 +88,39 @@
     margin-right: 20px; 
     margin-left: 5px;
 }
-.contenedor__informacion{
-    flex-grow: 1;
+.contenedor__contenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .contenedor__nombre{
-    color: #fff;
+    color: var(--blanco);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .contenedor__mensaje{
-    color: #9b9fa2;
+    color: var(--gris_suave);
     font-family: Arial, Helvetica, sans-serif;
 }
 .contenedor__tiempo-notificaciones{
     text-align: end;
-    align-items: flex-end;
 }
 .contenedor__tiempo{
     font-size: 15px;
-    color: #888;
+    color: var(--gris_suave);
     font-family: Arial, Helvetica, sans-serif;
 }
-.contenedor__tiempo--verde_claro{
+.contenedor__tiempo--verde_esmeralda{
     font-size: 15px;
-    color: #25d366;
+    color: var(--verde_esmeralda);
     font-family: Arial, Helvetica, sans-serif;
 }
-.contenedor__notificaciones--verde_claro{
+.contenedor__notificaciones--verde_esmeralda{
     display: inline-block;
     width: 18px;
     height: 18px;
-    background-color: #25d366;
+    background-color: var(--verde_esmeralda);
     border-radius: 50%;
     font-size: 10px;
     margin-top: 4px;
