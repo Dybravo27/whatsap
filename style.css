@@ -13,7 +13,7 @@
     position: relative;
 }
 .contenedor__encabezado{
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@
 }
  /* Barra de chat, estado, llamadas */
 .contenedor__encabezado_barra{
-    height: 40px;
+    height: 50px;
     color: var(--blanco);
     display: flex;
     justify-content: space-around;
@@ -68,15 +68,13 @@
 }
 /* --------------chats-------------- */
 .contenedor__listas{
-    max-height: 555px;
+    max-height: 536px;
     overflow-y: scroll;
-    padding: 10px;
 }
 .contenedor__chats{
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: 15px 10px;
 }
 .contenedor__chats--fondo_gris_oscuro:hover{
     background-color: var(--gris_oscuro);
@@ -102,6 +100,9 @@
 .contenedor__mensaje{
     color: var(--gris_suave);
     font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor__mensaje--verde_esmeralda{
+    color: var(--verde_esmeralda);
 }
 .contenedor__tiempo-notificaciones{
     text-align: end;
