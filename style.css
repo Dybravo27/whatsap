@@ -9,7 +9,7 @@ body{
 }
 .contenedor{
     max-width: 450px;
-    height: 90vh;
+    height: 850px;
     margin: 50px auto;
     background-color: var(--negro_grisaceo);
     border-radius: 10px;
@@ -49,7 +49,7 @@ body{
 }
 .contenedor__titulo_navegacion{
     color: var(--blanco);
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5px;
     text-decoration: none;
@@ -58,9 +58,10 @@ body{
     display: flex;
     position: absolute;
     background-color: var(--verde_esmeralda);
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    color: var(--negro_grisaceo);
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -71,7 +72,7 @@ body{
 }
 /* --------------chats-------------- */
 .contenedor__listas{
-    max-height: 536px;
+    max-height: 730px;
     overflow-y: scroll;
 }
 .contenedor__chats{
@@ -133,3 +134,94 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
+/* ----------estados---------- */
+/* .contenedor__estado_texto{
+    display: flex;
+    background-color: var(--gris_suave);
+    color: var(--blanco);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.contenedor__estado_camara{
+    display: flex;
+    background-color: var(--verde_esmeralda);
+    color: var(--negro_grisaceo);
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    cursor: pointer;
+}
+.contenedor__item{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+.contenedor__item--fondo-gris_oscuro:hover{
+    background-color: var(--gris_oscuro);
+}
+.contenedor__imagen_estado{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px; 
+    margin-left: 5px;
+}
+.contenedor__imagen_estado--sin_borde{
+    border: none;
+}
+.contenedor__imagen_estado--borde_verde_esmeralda{
+    border: 3px solid var(--verde_esmeralda);
+    padding: 2px;
+}
+.contenedor__imagen_estado--borde_gris_suave{
+    border: 3px solid var(--gris_suave);
+    padding: 2px;
+}
+.contenedor__agregar_estado{
+    background-color: var(--verde_esmeralda);
+    color: var(--negro_grisaceo);
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid var(--negro_grisaceo);
+}
+.contenedor__contenido_estado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor__nombre_estado{
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contenedor__tiempo_estado{
+    color: var(--gris_suave);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor__titulo_recientes{
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 0 15px;
+}
+.contenedor__titulo_vistos{
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 0 15px;
+} */
