@@ -1,0 +1,87 @@
+/* --------------chats-------------- */
+
+.contenedor_chats{
+    position: relative;
+}
+.contenedor_chats-listas{
+    max-height: 730px;
+    overflow-y: scroll;
+    width: 450px;
+    height: 730px;
+    overflow-y: auto;
+}
+.contenedor__contactos{
+    display: flex;
+    position: absolute;
+    right: 35px;
+    bottom: 32px;
+    background-color: var(--verde_esmeralda);
+    color: var(--negro_grisaceo);
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    cursor: pointer;
+}
+.contenedor__chats{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+.contenedor__chats--fondo_gris_oscuro:hover{
+    background-color: var(--gris_oscuro);
+}
+.contenedor__imagen{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px; 
+    margin-left: 5px;
+}
+.contenedor__contenido{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor__nombre{
+    color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contenedor__mensaje{
+    color: var(--gris_suave);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor__mensaje--verde_esmeralda{
+    color: var(--verde_esmeralda);
+}
+.contenedor__tiempo-notificaciones{
+    text-align: end;
+}
+.contenedor__tiempo{
+    font-size: 15px;
+    color: var(--gris_suave);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor__tiempo--verde_esmeralda{
+    font-size: 15px;
+    color: var(--verde_esmeralda);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor__notificaciones--verde_esmeralda{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--verde_esmeralda);
+    border-radius: 50%;
+    font-size: 10px;
+    margin-top: 4px;
+    text-align: center;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}

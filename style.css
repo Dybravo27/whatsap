@@ -1,19 +1,59 @@
 @import url(variables.css);
+@import url(estilos/chats.css);
+@import url(estilos/estados.css);
+@import url(estilos/llamadas.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* interfaz pasar de chats a estados y llamadas */
+
 body{
     background-color: var(--gris_blanquito);
 }
+
+.contenedor__interaccion{
+    position: relative;
+}
+
+.contenedor__radio{
+    visibility: hidden;
+    display: none;
+}
+#chats:checked~.contenedor__titulo_navegacion .contenedor__titulo_navegacion:nth-child(1),
+#estados:checked~.contenedor__titulo_navegacion .contenedor__titulo_navegacion:nth-child(2),
+#llamadas:checked~.contenedor__titulo_navegacion .contenedor__titulo_navegacion:nth-child(3){
+    border: 10px solid #fff;
+}
+.contenedor__interaccion_principal{
+    display: flex;
+    position: relative;
+    width: 1050px;
+    height: 730px;
+}
+
+#chats:checked ~ .contenedor__interaccion_principal{
+    /* left: calc(350px*0); */
+    translate: 0px;
+}
+#estados:checked ~ .contenedor__interaccion_principal{
+    /* left: calc(350px *-1); */
+    translate: -350px;
+}
+#llamadas:checked ~ .contenedor__interaccion_principal{
+    /* left: calc(350px*-2); */
+    translate: -700px;
+}
+
 .contenedor{
     max-width: 450px;
     height: 850px;
     margin: 50px auto;
     background-color: var(--negro_grisaceo);
     border-radius: 10px;
-    position: relative;
+    /* position: relative; */
+    overflow: hidden;
 }
 .contenedor__encabezado{
     height: 70px;
@@ -53,175 +93,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5px;
     text-decoration: none;
-}
-.contenedor__contactos{
-    display: flex;
-    position: absolute;
-    background-color: var(--verde_esmeralda);
-    color: var(--negro_grisaceo);
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    cursor: pointer;
-    right: 35px;
-    bottom: 25px;
-}
-/* --------------chats-------------- */
-.contenedor__listas{
-    max-height: 730px;
-    overflow-y: scroll;
-}
-.contenedor__chats{
-    display: flex;
-    align-items: center;
-    padding: 15px 10px;
-}
-.contenedor__chats--fondo_gris_oscuro:hover{
-    background-color: var(--gris_oscuro);
-}
-.contenedor__imagen{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px; 
-    margin-left: 5px;
-}
-.contenedor__contenido{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contenedor__nombre{
-    color: var(--blanco);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-.contenedor__mensaje{
-    color: var(--gris_suave);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.contenedor__mensaje--verde_esmeralda{
-    color: var(--verde_esmeralda);
-}
-.contenedor__tiempo-notificaciones{
-    text-align: end;
-}
-.contenedor__tiempo{
-    font-size: 15px;
-    color: var(--gris_suave);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.contenedor__tiempo--verde_esmeralda{
-    font-size: 15px;
-    color: var(--verde_esmeralda);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.contenedor__notificaciones--verde_esmeralda{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: var(--verde_esmeralda);
-    border-radius: 50%;
-    font-size: 10px;
-    margin-top: 4px;
-    text-align: center;
-    line-height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-}
-/* ----------estados---------- */
-/* .contenedor__estado_texto{
-    display: flex;
-    background-color: var(--gris_suave);
-    color: var(--blanco);
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    text-transform: uppercase;
     cursor: pointer;
 }
-.contenedor__estado_camara{
-    display: flex;
-    background-color: var(--verde_esmeralda);
-    color: var(--negro_grisaceo);
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    cursor: pointer;
-}
-.contenedor__item{
-    display: flex;
-    align-items: center;
-    padding: 15px 10px;
-}
-.contenedor__item--fondo-gris_oscuro:hover{
-    background-color: var(--gris_oscuro);
-}
-.contenedor__imagen_estado{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px; 
-    margin-left: 5px;
-}
-.contenedor__imagen_estado--sin_borde{
-    border: none;
-}
-.contenedor__imagen_estado--borde_verde_esmeralda{
-    border: 3px solid var(--verde_esmeralda);
-    padding: 2px;
-}
-.contenedor__imagen_estado--borde_gris_suave{
-    border: 3px solid var(--gris_suave);
-    padding: 2px;
-}
-.contenedor__agregar_estado{
-    background-color: var(--verde_esmeralda);
-    color: var(--negro_grisaceo);
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    border: 2px solid var(--negro_grisaceo);
-}
-.contenedor__contenido_estado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contenedor__nombre_estado{
-    color: var(--blanco);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-.contenedor__tiempo_estado{
-    color: var(--gris_suave);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.contenedor__titulo_recientes{
-    color: var(--blanco);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    padding: 0 15px;
-}
-.contenedor__titulo_vistos{
-    color: var(--blanco);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    padding: 0 15px;
-} */
