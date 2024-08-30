@@ -29,7 +29,7 @@ body{
 .contenedor__interaccion_principal{
     display: flex;
     position: relative;
-    width: 1050px;
+    width: 1350px;
     height: 730px;
 }
 
@@ -39,11 +39,11 @@ body{
 }
 #estados:checked ~ .contenedor__interaccion_principal{
     /* left: calc(350px *-1); */
-    translate: -350px;
+    translate: -450px;
 }
 #llamadas:checked ~ .contenedor__interaccion_principal{
     /* left: calc(350px*-2); */
-    translate: -700px;
+    translate: -900px;
 }
 
 .contenedor{
